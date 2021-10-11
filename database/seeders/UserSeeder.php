@@ -18,7 +18,7 @@ class UserSeeder extends Seeder
         $adminUser = User::query()->create([
             'role_id' => Role::query()->where('title', 'admin')->first()->id,
             'name' => 'admin user',
-            'email' => 'laravelgithubacademyit@gmail.com',
+            'email' => 'reza.olapour@gmail.com',
             'password' => bcrypt('12345')
         ]);
     }
